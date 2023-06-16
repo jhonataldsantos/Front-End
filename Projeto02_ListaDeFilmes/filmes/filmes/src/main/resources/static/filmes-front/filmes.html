@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Filmes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+    </head>
+    <body>
+    
+    <!--Primeiro, temos o título de listagem de filmes. -->
+    <h1>Listagem de filmes</h1>
+    
+    <!--Em seguida a lista de filmes adicionados (SE HOUVER). -->
+    <h2>Filmes Adicionados</h2>
+    <table id="moviesTable">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome do Filme</th>
+            <th>Gênero</th>
+            <th>Ano de Lançamento</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <!--Por último, temos o botão de adicionar filme, com seus campos de preenchimento obrigatórios!. -->
+    <h2>Adicionar Filme</h2>
+    <form id="addMovieForm">
+        <label for="movieTitle">Nome do Filme:</label>
+        <input type="text" id="movieTitle" name="movieTitle" required>
+        <br>
+        <label for="movieGenre">Gênero:</label>
+        <input type="text" id="movieGenre" name="movieGenre" required>
+        <br>
+        <label for="movieYear">Ano de Lançamento:</label>
+        <input type="number" id="movieYear" name="movieYear" required>
+        <br>
+        <button class="addButton">Adicionar Filme</button>
+    </form>
+
+    <!-- Abaixo chamamos o javascript para realizar as demais funções -->
+    <script src="script.js"></script>
+    </body>
+    </html>
